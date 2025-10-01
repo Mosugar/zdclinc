@@ -1,0 +1,65 @@
+.content {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #fff;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .cards {
+    padding-top: 60px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .card {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 128, 247, 0.1);
+    transition: all 0.4s ease;
+    background: white;
+    border: 2px solid transparent;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 30px rgba(0, 128, 247, 0.2);
+    border-color: var(--blue);
+  }
+  .icon {
+    padding-bottom: 25px;
+    transition: transform 0.3s ease;
+  }
+  .card:hover .icon {
+    transform: scale(1.1);
+  }
+  .icon img {
+    opacity: 0;
+  }
+  .title {
+    font-size: var(--fz-xl);
+    font-weight: 600;
+    padding-bottom: 15px;
+    font-family: "Expo-Arabic";
+    color: var(--blue);
+    text-align: center;
+  }
+  .description {
+    text-align: center;
+    color: var(--grey);
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 850px) {
+    .container {
+      width: 90%;
+    }
+  }

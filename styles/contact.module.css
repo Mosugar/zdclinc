@@ -1,0 +1,121 @@
+.content {
+    width: 100%;
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(0, 128, 247, 0.9), rgba(3, 87, 164, 0.9));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+.card {
+    position: relative;
+    z-index: 3;
+    background-color: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+}
+.card h1 {
+    font-size: 2rem;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    color: var(--blue);
+}
+.card span {
+    font-size: 14px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--grey);
+}
+.row {
+    width: 100%;
+}
+.row input::placeholder,
+.row textarea::placeholder {
+    color: var(--grey);
+}
+.row input {
+    width: 100%;
+    height: 50px;
+    background-color: var(--light-blue);
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.row input:focus {
+    border-color: var(--blue);
+    background-color: white;
+}
+.row textarea {
+    width: 100%;
+    height: 120px;
+    background-color: var(--light-blue);
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border: 2px solid transparent;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+.row textarea:focus {
+    border-color: var(--blue);
+    background-color: white;
+}
+.btn {
+    width: 100%;
+}
+.btn button {
+    background-color: var(--blue);
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+.btn button:hover {
+    background-color: var(--dark-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0, 128, 247, 0.4);
+}
+
+@media (max-width: 700px) {
+    .card {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 580px) {
+    .container {
+        padding: 0;
+    }
+    .card {
+        border-radius: 0;
+        min-height: 100vh;
+        justify-content: center;
+    }
+}
