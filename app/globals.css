@@ -2,32 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --blue: #0080F7;
+  --dark-blue: #0357a4;
+  --light-blue: #E4F4F9;
+  --white: #fff;
+  --grey: #3c3c3c;
+  --dark: #161616;
+  --orange: #FF6B35;
+
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-2xl: 22px;
+  --fz-3xl: 2rem;
+
+  --radius-circle: 50%;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--white);
+  direction: rtl;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-blue);
 }

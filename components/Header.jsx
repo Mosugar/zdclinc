@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import gsap from "gsap";
-import style from "@/styles/header.module.css";
+import style from "../styles/header.module.css";
 import Image from "next/image";
 
 const Header = () => {

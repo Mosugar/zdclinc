@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
-import style from "@/styles/home/faqs.module.css";
-import Heading from "@/components/Heading";
+import style from "../../styles/home/faqs.module.css";
+import Heading from "..//Heading";
 
 const Faqs = () => {
   const [showAnswer, setShowAnswer] = useState(null);

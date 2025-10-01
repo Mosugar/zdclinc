@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import style from "@/styles/home/hero.module.css";
+import style from "../../styles/home/hero.module.css";
 import gsap from "gsap";
 
 const Hero = () => {

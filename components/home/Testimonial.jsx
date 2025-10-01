@@ -2,8 +2,8 @@
 import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import style from "@/styles/home/testimonial.module.css";
-import Heading from "@/components/Heading";
+import style from "../../styles/home/testimonial.module.css";
+import Heading from "..//Heading";
 
 const Testimonial = () => {
   useEffect(() => {
