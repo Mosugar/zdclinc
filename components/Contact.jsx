@@ -3,30 +3,30 @@ import style from "../styles/contact.module.css";
 const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("شكراً لتواصلك معنا! سنرد عليك في أقرب وقت ممكن.");
+    alert("Merci de nous avoir contactés ! Nous vous répondrons dans les plus brefs délais.");
   };
 
   return (
     <div className={style.content} id="contact">
       <div className={style.container}>
         <div className={style.card}>
-          <h1>تواصــل معنــا</h1>
-          <span>احصل على استشارة مجانية من فريقنا الطبي المتخصص</span>
+          <h1>Contactez-Nous</h1>
+          <span>Obtenez une consultation gratuite de notre équipe médicale spécialisée</span>
           <form onSubmit={handleSubmit}>
             <div className={style.row}>
-              <input type="text" placeholder="الاسم الكامل" required/>
+              <input type="text" placeholder="Nom complet" required/>
             </div>
             <div className={style.row}>
-              <input type="tel" placeholder="رقم الهاتف" required/>
+              <input type="tel" placeholder="Numéro de téléphone" required/>
             </div>
             <div className={style.row}>
-              <input type="email" placeholder="البريد الإلكتروني" />
+              <input type="email" placeholder="Adresse e-mail" />
             </div>
             <div className={style.row}>
-              <textarea name="message" placeholder="رسالتك..." required></textarea>
+              <textarea name="message" placeholder="Votre message..." required></textarea>
             </div>
             <div className={style.btn}>
-              <button type="submit">إرسال</button>
+              <button type="submit">Envoyer</button>
             </div>
           </form>
         </div>

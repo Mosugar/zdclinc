@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import style from "../../styles/home/team.module.css";
-import Heading from "..//Heading";
+import Heading from "../Heading";
 
 const Team = () => {
   useEffect(() => {
@@ -15,8 +15,6 @@ const Team = () => {
       opacity: 1,
       y: 0,
       duration: 0.4,
-      trigger: 0.2,
-      delay: 0.3,
       scrollTrigger: {
         trigger: ".team_det__zr",
         start: "center bottom",
@@ -28,18 +26,18 @@ const Team = () => {
 
   const team = [
     {
-      name: "د. زكريا الرحماني",
-      specialty: "جراح الفم والأسنان",
+      name: "Dr. Zakaria Rahmani",
+      specialty: "Chirurgien Dentiste",
       emoji: "👨‍⚕️"
     },
     {
-      name: "د. رشيدة بنعيسى",
-      specialty: "أخصائية تقويم الأسنان",
+      name: "Dr. Rachida Benissa",
+      specialty: "Orthodontiste",
       emoji: "👩‍⚕️"
     },
     {
-      name: "د. محمد الإدريسي",
-      specialty: "أخصائي زراعة الأسنان",
+      name: "Dr. Mohamed Idrissi",
+      specialty: "Implantologue",
       emoji: "👨‍⚕️"
     },
   ];
@@ -48,7 +46,7 @@ const Team = () => {
     <div className={style.content} id="team">
       <div className={style.container}>
         <Heading
-          topHeading={"فريقنــا الطبــي المتميــز"}
+          topHeading={"Notre Équipe d'Excellence"}
           centerHeading={true}
           showSubHeading={false}
           showBotHeading={false}

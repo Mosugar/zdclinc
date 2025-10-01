@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import style from "../../styles/home/faqs.module.css";
-import Heading from "..//Heading";
+import Heading from "../Heading";
 
 const Faqs = () => {
   const [showAnswer, setShowAnswer] = useState(null);
@@ -12,24 +12,24 @@ const Faqs = () => {
 
   const faq = [
     {
-      question: "كيف يمكنني حجز موعد في ZR Dental Clinic؟",
-      answer: "يمكنك حجز موعد بسهولة عبر الاتصال بنا على 07 70 22 22 36/37/38 أو عبر واتساب، أو زيارة عيادتنا مباشرة في Avenue Imam Ali, Immeuble 175, Bureau N°1, Kénitra.",
+      question: "Comment prendre rendez-vous à ZR Dental Clinic ?",
+      answer: "Vous pouvez prendre rendez-vous facilement en nous appelant au 07 70 22 22 36/37/38, via WhatsApp, ou en visitant directement notre clinique au Avenue Imam Ali, Immeuble 175, Bureau N°1, Kénitra.",
     },
     {
-      question: "ما هي ساعات العمل في العيادة؟",
-      answer: "نحن متواجدون لخدمتكم 7 أيام في الأسبوع. نفتخر بتوفير خدماتنا في جميع أيام الأسبوع لراحتكم.",
+      question: "Quels sont les horaires d'ouverture ?",
+      answer: "Nous sommes à votre service 7 jours sur 7. Nous sommes fiers d'offrir nos services tous les jours de la semaine pour votre confort.",
     },
     {
-      question: "هل تقبلون التأمين الصحي؟",
-      answer: "نعم، نتعامل مع معظم شركات التأمين الصحي. يرجى الاتصال بنا للتحقق من قبول تأمينك الصحي.",
+      question: "Acceptez-vous les assurances santé ?",
+      answer: "Oui, nous travaillons avec la plupart des compagnies d'assurance santé. Veuillez nous contacter pour vérifier si votre assurance est acceptée.",
     },
     {
-      question: "هل العلاج مؤلم؟",
-      answer: "نستخدم أحدث التقنيات والمخدرات الموضعية لضمان راحتك التامة. معظم إجراءاتنا غير مؤلمة أو ذات ألم طفيف جداً.",
+      question: "Les traitements sont-ils douloureux ?",
+      answer: "Nous utilisons les dernières technologies et anesthésiques locaux pour assurer votre confort total. La plupart de nos procédures sont indolores ou avec une douleur très légère.",
     },
     {
-      question: "ما هي خدمات الطوارئ المتوفرة؟",
-      answer: "نوفر خدمات طوارئ الأسنان. في حالة الطوارئ، يرجى الاتصال بنا فوراً وسنحاول استقبالك في أقرب وقت ممكن.",
+      question: "Quels services d'urgence proposez-vous ?",
+      answer: "Nous offrons des services d'urgence dentaire. En cas d'urgence, contactez-nous immédiatement et nous essaierons de vous recevoir dans les plus brefs délais.",
     },
   ];
 
@@ -37,7 +37,7 @@ const Faqs = () => {
     <div className={style.content} id="faq">
       <div className={style.container}>
         <Heading
-          topHeading={"الأسئــــلة الشــــائعــة"}
+          topHeading={"Questions Fréquentes"}
           centerHeading={true}
           showSubHeading={false}
           showBotHeading={false}

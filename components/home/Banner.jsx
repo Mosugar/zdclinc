@@ -5,8 +5,8 @@ const Banner = () => {
     <div className={style.content}>
       <div className={style.container}>
         <div className={style.part}>
-          <div>نفتــــــخر بثقتكـــــــم</div>
-          <div>ونسعـــــــــــد بخدمتكـــــــم</div>
+          <div>Votre Confiance</div>
+          <div>Fait Notre Fierté</div>
           <div>ZR Dental Clinic</div>
         </div>
 
